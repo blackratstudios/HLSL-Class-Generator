@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackRat.Shaders", "src\Bla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackRat.Shaders.Tests", "src\Tests\BlackRat.Shaders.Tests\BlackRat.Shaders.Tests.csproj", "{EDAFC765-9172-4075-A906-E686F517A4BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderClassGenerator", "src\ShaderClassGenerator\ShaderClassGenerator.csproj", "{2D130367-FFF9-4C92-B9E9-286DEC28C749}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderClassGenerator", "src\ShaderClassGenerator\ShaderClassGenerator.csproj", "{AE362DEA-AA33-4B03-B609-3F30B0C7D1D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{EDAFC765-9172-4075-A906-E686F517A4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDAFC765-9172-4075-A906-E686F517A4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDAFC765-9172-4075-A906-E686F517A4BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D130367-FFF9-4C92-B9E9-286DEC28C749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D130367-FFF9-4C92-B9E9-286DEC28C749}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D130367-FFF9-4C92-B9E9-286DEC28C749}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D130367-FFF9-4C92-B9E9-286DEC28C749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE362DEA-AA33-4B03-B609-3F30B0C7D1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE362DEA-AA33-4B03-B609-3F30B0C7D1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE362DEA-AA33-4B03-B609-3F30B0C7D1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE362DEA-AA33-4B03-B609-3F30B0C7D1D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

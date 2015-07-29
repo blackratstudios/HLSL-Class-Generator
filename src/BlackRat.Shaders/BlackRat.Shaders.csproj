@@ -50,6 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeGeneration\BytecodeHeaderGenerator.partial.cs" />
+    <Compile Include="CodeGeneration\BytecodeHeaderGenerator.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BytecodeHeaderGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeGeneration\ICodeGenerator.cs" />
+    <Compile Include="CodeGeneration\IncludeGuardStyle.cs" />
     <Compile Include="CodeGeneration\ShaderClassGeneratorOptions.cs" />
     <Compile Include="D3D11TypeNameProvider.cs" />
     <Compile Include="ExtensionMethods.cs" />
@@ -65,17 +73,26 @@
     <Compile Include="ShaderKind.cs" />
     <Compile Include="ShaderModel.cs" />
     <Compile Include="ShaderProfile.cs" />
+    <Compile Include="ThrowIf.Argument.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="CodeGeneration\BytecodeHeaderGenerator.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>BytecodeHeaderGenerator.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\D3D11Types.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>D3D11Types.Designer.cs</LastGenOutput>
       <CustomToolNamespace>BlackRat.Shaders</CustomToolNamespace>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\SharpDX.2.6.3\build\SharpDX.targets" Condition="Exists('..\..\packages\SharpDX.2.6.3\build\SharpDX.targets')" />
