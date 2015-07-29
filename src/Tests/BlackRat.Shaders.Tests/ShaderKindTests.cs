@@ -26,6 +26,16 @@ namespace BlackRat.Shaders.Tests
                     Assert.Fail("ToShortKindString did not return a string for all possible ShaderKind values");
                 }
             }
+
+            try
+            {
+                var shortName = ((ShaderKind)560).ToShortKindString();
+                Assert.Fail("ToShortKindString failed to throw an InvalidOperationExcept for an invalid value");
+            }
+            catch(InvalidOperationException)
+            {
+                
+            }
         }
     }
 }
