@@ -61,7 +61,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\BlackRat.Shaders\BlackRat.Shaders.csproj">
+    <ProjectReference Include="..\BlackRat.Shaders\BlackRat.Shaders.csproj">
       <Project>{f18bd504-05ce-48f1-9e50-8dbcc4000745}</Project>
       <Name>BlackRat.Shaders</Name>
     </ProjectReference>

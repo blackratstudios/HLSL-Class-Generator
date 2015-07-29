@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeGeneration\ShaderClassGeneratorOptions.cs" />
     <Compile Include="D3D11TypeNameProvider.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="ID3DTypeNameProvider.cs" />
