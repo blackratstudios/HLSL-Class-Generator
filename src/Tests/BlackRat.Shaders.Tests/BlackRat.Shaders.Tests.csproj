@@ -53,6 +53,7 @@
     <Compile Include="ShaderKindTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShaderModelTests.cs" />
+    <Compile Include="ShaderProfileTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BlackRat.Shaders\BlackRat.Shaders.csproj">
