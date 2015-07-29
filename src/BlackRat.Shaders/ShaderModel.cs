@@ -13,6 +13,16 @@ namespace BlackRat.Shaders
 
         public ShaderModel(int majorVersion, int minorVersion)
         {
+            if(majorVersion < 1)
+            {
+                throw new ArgumentException($"{nameof(majorVersion)} cannot be less than 1", nameof(majorVersion));
+            }
+
+            if(minorVersion < 0)
+            {
+                throw new ArgumentException($"{nameof(minorVersion)} cannot be less than zero", nameof(minorVersion));
+            }
+
             this.majorVersion = majorVersion;
             this.minorVersion = minorVersion;
         }
